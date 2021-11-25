@@ -3,6 +3,7 @@ const app = new Vue({
     data:{
         message:'hello Vue!!!',
         myClass:'blue',
+        togle:'active',
         source:'https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80'
     },
     methods:{
@@ -12,7 +13,10 @@ const app = new Vue({
         }else if(this.myClass == 'red'){
             this.myClass = 'green';
         }else{this.myClass = 'blue'}
-    
+        
+        this.togle = this.togle == 'active' ? 'not-active' : 'active';
+        document.getElementById('titolo').classList.remove('myClass');
+
     }}
 });
 

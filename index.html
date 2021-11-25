@@ -9,9 +9,9 @@
 </head>
 <body>
     <div id="root">
-        <h1 :class='myClass'>{{message}}</h1>
+        <h1 id='titolo' :class='myClass'>{{message}}</h1>
         <input v-model='message' type="text" name="" id="">
-        <img src="" :src='source' alt="codici">
+        <img :class='togle' src="" :src='source' alt="codici">
         <button @click='myTogle'>click Me</button>
     </div>
     
